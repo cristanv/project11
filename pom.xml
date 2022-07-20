@@ -42,12 +42,12 @@
     <version>7.4.0</version>
     <scope>compile</scope>
 </dependency>
-
-
 </dependencies>
+
+
 <profiles>
 <profile>
-<id>RS</id>
+<id>rt</id>
 
 <build>
 <plugins>
@@ -62,7 +62,7 @@
         <configuration>
           <suiteXmlFiles>
             
-            <suiteXmlFile>Regression.xml</suiteXmlFile>
+            <suiteXmlFile>regressiontesting.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -70,7 +70,7 @@
 </build>
 </profile>
 <profile>
-<id>ST</id>
+<id>st</id>
 <build>
 <plugins>
       <plugin>
@@ -84,7 +84,7 @@
         <configuration>
           <suiteXmlFiles>
             
-            <suiteXmlFile>Smoke.xml</suiteXmlFile>
+            <suiteXmlFile>smoketesting.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
